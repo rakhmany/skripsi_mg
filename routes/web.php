@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/pendaftaran', function () {
     return view('pendaftaran');
 });
+
+Route::get('/c_profile', function () {
+    return view('customer/c_profile');
+});

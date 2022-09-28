@@ -39,7 +39,7 @@
                         <h5 class="mb-1" style="font-weight: bold">Data Personal</h5>
                         <p>Insert your profile details and address</p>
                     </div>
-                    <div class="row border-bottom pb-1">
+                    <div class="row pb-1">
                         <div class="col-3 mt-3">
                             <h6 class="mb-1" style="font-weight: bold">Data Personal</h6>
                         </div>
@@ -67,11 +67,38 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-3 mt-3">
+                            <h6 class="mb-1" style="font-weight: bold">Email</h6>
+                            <p>Informasi akan dikirimkan melalui alamat email yang tertera</p>
+                        </div>
+                        <div class="col-9 mt-3">
+                            <div class="mb-3">
+                                <label for="" class="form-label">Alamat Email</label>
+                                <input type="text" class="form-control" id="" aria-describedby="" placeholder="Masukkan alamat email">
+                            </div>
+                        </div>
+
+                        <div class="col-3 mt-3">
+                            <h6 class="mb-1" style="font-weight: bold">Alamat Rumah</h6>
+                        </div>
+                        <div class="col-9 mt-3">
+                            <div class="mb-3">
+                                <textarea name="alamat-rumah" id="" cols="50" rows="10" placeholder="Masukkan alamat lenglap" class="form-control"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <select name="" id="" class="form-select">
+                                    <option value="">-- Pilih jenis kelamin --</option>
+                                    <option value="">Laki - laki</option>
+                                    <option value="">Perempuan</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-dark float-right w-50">Simpan</button>
+                        </div>
                     </div>
                     
-                    <div class="col-3 border-bottom mb-3">
-                        <h6 class="mb-1" style="font-weight: bold">Email</h6>
-                    </div>
+                    
                     {{-- <div class="col-12 mt-3">
                         <button type="submit" class="btn btn-primary">Sign in</button>
                     </div> --}}
