@@ -1,0 +1,18 @@
+.content-main{
+    /* background-color: aqua; */
+    height: 100vh;
+}
+
+.contoh2::-webkit-input-placeholder{
+	color: white;
+}
+
+.btn-ungu{
+    background: #526EFF;
+}
+
+table {
+    background: whitesmoke;
+    border-color: red;
+    border-radius: 10px;
+}
