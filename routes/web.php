@@ -37,7 +37,71 @@ Route::get('/c_order_v', function () {
     return view('customer/c_order_v');
 });
 
+
+// Calon Member
+Route::get('/clnmember', function () {
+    return view('adm_cs_stock/cln_member');
+});
+Route::get('/clnmember_v', function () {
+    return view('adm_cs_stock/cln_member_detail');
+});
+// Calon Member
+
+// Manage Product
+Route::get('/m_produk', function () {
+    return view('adm_cs_stock/m_produk');
+});
+Route::get('/m_produk_add', function () {
+    return view('adm_cs_stock/m_produk_add');
+});
+Route::get('/m_produk_updt', function () {
+    return view('adm_cs_stock/m_produk_updt');
+});
+// Manage Product
+
+// Stock Product
+Route::get('/stk_produk', function () {
+    return view('adm_cs_stock/stk_produk');
+});
+Route::get('/stk_produk_add', function () {
+    return view('adm_cs_stock/stk_produk_add');
+});
+Route::get('/stk_produk_updt', function () {
+    return view('adm_cs_stock/stk_produk_updt');
+});
+// Stock Product
+
+//* ---------- ADMIN REPEAT ORDER ---------- */
+// Order Barang
+Route::get('/order', function () {
+    return view('adm_ro/ord_barang');
+});
+Route::get('/order_v', function () {
+    return view('adm_ro/ord_barang_v');
+});
+Route::get('/order_updt', function () {
+    return view('adm_ro/ord_barang_updt');
+});
+// Order Barang
+
+// Pengiriman
+Route::get('/pengiriman', function () {
+    return view('adm_ro/pengiriman');
+});
+Route::get('/pengiriman_updt', function () {
+    return view('adm_ro/pengiriman_updt');
+});
+Route::get('/pengiriman_v', function () {
+    return view('adm_ro/pengiriman_v');
+});
+// Pengiriman
+//* ---------- ADMIN REPEAT ORDER ---------- */
+
 Route::get('/tes-nav', function () {
     return view('tes-nav');
 });
+
+// Route::get('/side', function () {
+//     return view('sidebar');
+// });
 

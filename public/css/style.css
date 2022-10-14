@@ -11,6 +11,11 @@
     background: #526EFF;
 }
 
+.kotak {
+    background: whitesmoke;
+    border-radius: 10px;
+}
+
 table {
     background: whitesmoke;
     border-color: red;
