@@ -1,3 +1,5 @@
+<title>Login | Daftar</title>
+
 <head>
     <link rel="stylesheet" href="/css/login.css">
     <!-- MDB -->
@@ -32,7 +34,6 @@ rel="stylesheet"
                       </div>
       
                       <form>
-                       
                         <div class="mb-4">
                           <label class="form-label" for="form2Example11">Email</label>
                           <input type="email" id="form2Example11" class="form-control" placeholder="Masukkan email anda" />
@@ -47,7 +48,6 @@ rel="stylesheet"
                         </div>
       
                         <div class="text-center pt-1 mb-5 pb-1">
-                          
                           <button class="btn btn-primary btn-block fa-lg mb-3" id="btn-ungu" type="button">Sign in</button>
                           <button class="btn btn-primary btn-block fa-lg mb-3" id="btn-ungu" type="button">Daftar Reseller</button>
                         </div>
@@ -55,12 +55,11 @@ rel="stylesheet"
                         {{-- <div class="d-flex align-items-center justify-content-center pb-4">
                           <p class="mb-0 me-2">Don't have an account?</p>
                           <button type="button" class="btn btn-outline-danger">Create new</button>
-                        </div>
-       --}}
+                        </div> --}}
                       </form>
-      
                     </div>
                   </div>
+
                   <div class="col-lg-6 d-grid align-items-center bg-right">
                         <div class="text-white p-md-3 mx-md-4">
                             <h3 class="mb-2" style="font-weight: bold">Selamat Datang,</h3>
@@ -70,6 +69,7 @@ rel="stylesheet"
                             <p id="copyrightLogin">© 2021-2022, Yudaz A Rakhman | <b>SKRIPSI</b></p>
                         </div>
                   </div>
+                  
                 </div>
               </div>
             </div>

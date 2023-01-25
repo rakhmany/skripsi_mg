@@ -40,44 +40,37 @@
       *{
         font-family: 'Poppins', sans-serif;
       }
+      
+      .bg-content{
+        /* color: var(--bs-secondary-bg); */
+        background-color: rgba(122, 122, 122, 0.144);
+      }
     </style>
 
   </head>
   <body>
 
-    <header class="w-100 d-grid shadow text-dark">
-        @include('partials.nav-admin')
-    </header>
+  {{-- <header class="w-100 d-grid shadow text-dark"> --}}
+  <div class="container-fluid">
+    @include('partials.nav-admin')
+  </div>    
 
-    <main class="border">
-        <div class="row">
-            <div class="col-2 p-3 shadow" >
-                @include('partials.sidebar')
-            </div>
-            <div class="col-10">
-              @yield('content')
-            </div>
-        </div>
-    </main>
-  
+  <div class="row">
+      <div class="col-2 p-4 bg-white" >
+          @include('partials.sidebar')
+      </div>
+      <div class="col-10 p-3 bg-content">
+        @yield('content')
+      </div>
+  </div>
 
-    {{-- <footer class="container-fluid bg-primary text-white">
-        <div class="row">
-            <div class="col-12 py-4">
-                &copy; 2021 Tutorial Bootstrap
-            </div>
-        </div>
-    </footer> --}}
-
-  
-  {{-- @include('partials.navbar') --}}
-  {{-- @include('partials.sidebar') --}}
-  {{-- @include('partials.nav') --}}
-  
-  {{-- <div class="container mt-4">
-    @yield('content')
-  </div> --}}
-  
+  <footer class="container-fluid text-white text-center btn-ungu">
+      <div class="row">
+          <div class="col-12 py-4">
+              &copy; 2023 Yudaz A Rakhman | Skripsi
+          </div>
+      </div>
+  </footer>
 
   <script src="/js/script.js"></script>
   <script src="fontawesome/attribution.js"></script>
