@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\adm_CalonMemberController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\usr_CustomerProfile_Controller; 
+use App\Http\Controllers\usr_CustomerController; 
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +18,33 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('login');
+});
+
+// NEW
+
+
+Route::controller(usr_CustomerController::class)->group(function () {
+    Route::get('customer/profile', 'profile_index');
+    Route::get('customer/order', 'order_index');
+});
+
+Route::controller(adm_CalonMemberController::class)->group(function () {
+    Route::get('admin/cln_member', 'index');
+    Route::get('admin/cln_member/view', 'view');
+});
+
+
+// NEW
+
+Route::get('/daftar', function () {
+    return view('customer/c_daftar');
+});
+
+Route::get('/c_daftar_', function () {
+    return view('customer/c_daftar_new');
+});
+Route::get('c_daftar_n', function () {
+    return view('customer/c_daftar_new');
 });
 
 Route::get('/c_daftar', function () {
